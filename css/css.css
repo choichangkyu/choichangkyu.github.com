@@ -1,0 +1,310 @@
+body{
+	background: #EAEAEA;
+	font-family: 'Lobster';
+}
+body,html{
+	width: 100%;
+    margin: 0;
+    height: 100%;
+    padding: 0;
+}
+#bg_container{ 
+	height:1000px; 
+	overflow:hidden; 
+}
+        
+#bg{ 
+	width:100%; 
+	height:900px; 
+}
+#content{ 
+	position:absolute; 
+	top:0px; 
+	padding:30px; 
+	color:#FFF; 
+	text-shadow:#000 2px 2px; 
+}
+.redredred {
+    background-color: red;
+    opacity: 0.5;
+    width:100%; 
+    height:900px;
+
+}
+.banner{
+	background: url(../img/mamamoo.jpg) no-repeat center;
+	background-size: cover;
+	min-height: 550px;
+	position: relative;
+	text-align: center;
+	color: #fff;
+}
+.banner::before{
+	content: "";
+    display: block;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    background: #a83279;
+    background-repeat: repeat-x;
+    background-image: -webkit-linear-gradient(-45deg,#a83279,#d38312);
+    background-image: linear-gradient(-45deg,#a83279,#d38312);
+    opacity: .8;
+}
+.nav{
+	display: inline-block;
+    float: none;
+    padding:0;
+    font-size: 0;
+    margin-bottom: -6px;
+}
+.container{
+	margin-left: auto;
+	margin-right: auto;
+	padding-left:15px;
+	padding-right: 15px;
+	position: relative; 
+}
+.nav-main {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+	border-bottom:2px solid rgba(255,255,255,0.15); 
+}
+
+
+.nav>li>a{
+	text-transform: uppercase;
+	position:relative;
+	display:block;
+	padding:10px 25px;
+	color: white;
+	font-size: 15px;
+	max-width: 661px;
+	width: 80px;
+}
+.nav>li{
+	cursor: pointer;
+}
+
+
+a{	
+	color: black;
+	text-decoration: none;
+}
+
+.nav>li{
+	float: left;
+	margin: 0;
+
+	/*border-bottom: 2px solid;
+*/
+}
+.container>.main_div>div>h1{
+	font-size: 50px;
+	
+}
+.container>.main_div>#home_div>p{
+	color: white;
+	font-size: 30px;
+
+
+
+}
+
+
+#container>div{
+	position: relative;
+	visibility: hidden;
+}
+
+.main_div{
+	display: inline-block;
+	color: white;
+	text-transform: uppercase;
+	padding-top: 230px;
+}
+.main_div_div{
+	display: none;
+}
+
+.wrap{
+	border-radius: 7px;
+	width: 80%;
+	position: relative;
+	background: white;
+	margin: 30px auto;
+	padding: 20px 0;
+	float: none;
+
+}
+
+#profile_main,#project_main,#experience_main,#portfolio_main{
+	position: relative;
+	display: none;
+
+}
+.project_img_div{
+	position: relative;
+	transition-duration: 0.5s;
+	float : left;
+	padding:20px 40px 60px;
+	overflow: hidden;
+}
+.project_img_div2{
+	overflow: hidden;
+	position: relative;
+}
+.project_hover:hover{
+	opacity: 1;
+}
+
+.project_img_div2>img{
+	width: 370px;
+	height: 233px;
+}
+
+.project_hover{
+	padding: 20px 0;
+	background-color: #ec523f;
+    position: absolute;
+    width: 100%;
+    height: 81%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    color: white;
+    opacity: 0;
+    transition: all 200ms ease-in-out;
+}
+.project_hover>p:first-child{
+	display: inline-block;
+	padding-bottom: 15px;
+	border-bottom:2px solid white; 
+}
+
+
+.lecture{
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+
+
+
+.ucc1{
+	display: none;
+}
+
+.profile{
+	float: left;
+	margin:0 50px;
+}
+
+.profile h1{
+	text-align: center;
+}
+.profile_div{
+	display: inline;
+	position: relative;
+	margin: 0 auto;
+}
+
+.profile_p{
+	margin-right: 20px;
+	margin-top: 0;
+	position: relative;
+
+}
+
+#profile_img{
+	border-radius: 50%;
+	width : 280px;
+	position: relative;
+}
+
+
+
+@media screen and (max-width:1141px) {
+  .project_img_div {float: none;}
+}
+
+@media(max-width:699px) { 
+	.nav>li>a{
+		position:relative;
+		display:inline-block;
+		color: white;
+		font-size: 14px;
+
+	}
+	.nav>li{
+		width: 100%;
+		float: left;
+		display: inline;
+	}
+	.nav{
+
+		list-style-type: none;
+		overflow: auto;
+	}
+	.nav-main{
+		background-color: rgb(236, 82, 63);
+	}
+
+}
+
+@media(max-width: 1068px){
+	.profile{
+		float: none;
+	}
+	.hGraph ul{
+		font-size: 10px;
+		margin: 0;
+	}
+	.hGraph h1{
+		text-align: center;
+	}
+
+}
+#profile_main{
+	width: 100%;
+}
+
+.profile_content {
+	text-align: center;
+}
+
+.project_link::after{
+	content: "";
+	background-color: #474747;
+    opacity: 0.9;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.project_link{
+	display: none;
+	z-index: 1;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.project_img_div_dtl{
+	padding-top: 11%;
+}
+
+.project_link p{
+	color: white;
+}
+

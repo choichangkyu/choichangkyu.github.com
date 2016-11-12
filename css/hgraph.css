@@ -1,0 +1,48 @@
+.hGraph ul{ 
+	margin:0 50px 0 50px;
+ 	padding:1px 0 0 0;
+ 	border:1px solid #ddd;
+ 	border-top:0;
+ 	border-right:0;
+ 	border-bottom: 0;
+ 	font-size:12px;
+ 	list-style:none;
+}
+.hGraph li{ 
+	position:relative;
+	margin:10px 0;
+	white-space:nowrap;
+	vertical-align:top;
+	font-weight: bold;
+}
+.hGraph .gTerm{ 
+	position:absolute;
+	width:60px;
+	top:0;
+	left:-70px;
+	line-height:20px;
+	text-align:right;
+}
+.hGraph .gBar{ 
+	position:relative;
+	display:inline-block;
+	height:20px;
+	border:1px solid #ccc;
+	border-left:0;
+	background:#f79e5f;
+}
+.hGraph .gBar span{ 
+	position:absolute;
+	width:40px;
+	line-height:20px;
+	top:0;
+	right:-50px;
+
+}
+.hGraph{
+	display:inline-block;
+	width:100%;
+}
+.hGraph h1{
+	text-align: center;
+}
